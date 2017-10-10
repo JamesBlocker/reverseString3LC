@@ -1,0 +1,13 @@
+var reverseWords = function(s) {
+    var arr = s.split(' ');
+    var result = [];
+    var reverseString = function(str) {
+        return str.split('').reverse().join('');
+    }
+    
+    arr.forEach(function(word) {
+        result.push(reverseString(word));
+    });
+    
+    return result.join(' ');
+};
